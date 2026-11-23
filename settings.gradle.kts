@@ -21,5 +21,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Agora"
+rootProject.name = "nCryptAI"
 include(":app", ":core:model", ":core:contracts", ":core:presentation", ":data:database", ":provider:cloud")
