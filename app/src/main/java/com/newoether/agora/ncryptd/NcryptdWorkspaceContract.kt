@@ -1,6 +1,5 @@
 package com.newoether.agora.ncryptd
 
-import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 /**
@@ -69,20 +68,14 @@ data class NcryptdApiError(
 )
 
 /**
- * Stable route names for the v1 mobile API. The backend must implement these
- * routes before the Android integration can be enabled in production.
+ * Supabase Auth/PostgREST resources already used by the nCryptd web client.
+ * A mobile implementation must use the signed-in user's access token and RLS.
  */
-object NcryptdApiRoutes {
-    const val VERSIONED_ROOT = "/api/mobile/v1"
-    const val ME = "$VERSIONED_ROOT/me"
-    const val WORKSPACES = "$VERSIONED_ROOT/workspaces"
-
-    fun projects(workspaceId: String) =
-        "$WORKSPACES/$workspaceId/projects"
-
-    fun tasks(projectId: String) =
-        "$VERSIONED_ROOT/projects/$projectId/tasks"
-
-    fun task(taskId: String) =
-        "$VERSIONED_ROOT/tasks/$taskId"
+object NcryptdSupabaseResources {
+    const val AUTH_USER = "/auth/v1/user"
+    const val WORKSPACE_MEMBERS = "/rest/v1/workspace_members"
+    const val WORKSPACES = "/rest/v1/workspaces"
+    const val PROJECTS = "/rest/v1/projects"
+    const val ISSUES = "/rest/v1/issues"
+    const val PROFILES = "/rest/v1/profiles"
 }
