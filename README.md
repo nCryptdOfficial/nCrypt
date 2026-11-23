@@ -1,15 +1,15 @@
 <div align="center">
-  <img src="app/src/main/assets/agora_transparent_large.png" alt="Agora Logo" width="120" />
+  # nCrypt AI
 
-  # Agora
+  **Your Android AI workspace — multi-provider chat, agentic workflows, and nCryptd integration.**
 
-  **BYOK LLM client with multi-provider access, agentic workflows, and remote device control.**
+  <sub>Independent GPL-3.0 fork of Agora. Not affiliated with or endorsed by the upstream project.</sub>
 
   [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
   [![Platform: Android](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com)
   [![Kotlin](https://img.shields.io/badge/Kotlin-Native-blue.svg)](https://kotlinlang.org/)
 
-  [Website](https://agora.newoether.com) · [User Manual](https://newo-ether.github.io/Agora/)
+  [nCryptd Workspace](https://github.com/nCryptdOfficial/nCryptd) · [Rebrand & Integration Plan](docs/NCRYPT_AI_REBRAND_AND_INTEGRATION.md) · [Upstream Agora](https://github.com/newo-ether/Agora)
 
   <img src="assets/feature_graphic.png" alt="Agora — A BYOK AI app that takes back your data sovereignty." width="100%" />
 </div>
